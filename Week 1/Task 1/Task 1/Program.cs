@@ -12,7 +12,7 @@ namespace Task_1
         static bool prime(int k)
         {
             // Так как 1 не является простым числом пишем  return false
-            if (k == 1) return false
+            if (k == 1) return false;
             // Пробегаемся по массиву для поиска простых чисел
             // Пишем i <= Math.Sqrt(k) дял того чтобы быстрей пробежатся по числам
             for (int i = 2; i <= Math.Sqrt(k); i++)
@@ -20,9 +20,9 @@ namespace Task_1
                 if (k % i == 0) return false;
             }
             return true;
-        {
-        static void Main(string[] args) 
         }
+        static void Main(string[] args)
+        { 
             // Создаем n для определения велечины массива
             // После чего парсим его
             int n = int.Parse(Console.ReadLine());
@@ -41,7 +41,7 @@ namespace Task_1
                 arr[i] = int.Parse(s[i]);
             }
             // j будет нашим иттератором для массива простых чисел
-            int j = 0
+            int j = 0;
             // Тут мы создаем for для проверки нашей функций
             for(int i = 0; i < n; i++)
             {
@@ -56,7 +56,7 @@ namespace Task_1
             // Выводим количество наших простых чисел
             Console.WriteLine(cnt);
             // И выводим наши простые числа через пробел
-            fot(int i = 0; i < cnt; i++)
+            for(int i = 0; i < cnt; i++)
             {
                 Console.Write(pr[i] + " ");
             }
